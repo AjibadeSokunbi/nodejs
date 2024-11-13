@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-//get one transaction
+//get one transactionS
 router.get('/:id', async (req, res) => {
   try {
     const transaction = await Transaction.findByPk(req.params.id);
